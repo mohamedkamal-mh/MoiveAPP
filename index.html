@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="main-nav top-0 justify-content-between position-fixed">
+        <div class="list bg-black text-white d-flex flex-column justify-content-between position-fixed vh-100 ">
+            <div class="links">
+                <ul>
+                    <li data-api="now_playing">Now playing</li>
+                    <li data-api="popular">Popular</li>
+                    <li data-api="top_rated">Top Rated</li>
+                    <li data-api="trending">Trending</li>
+                    <li data-api="upcoming">Upcoming</li>
+                    <li><a href="#Contact" class="text-decoration-none text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer ">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer py-2">
+                    <p>Copyright © 2025 All Rights
+                        <br> Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="taps d-flex flex-column justify-content-between p-3 bg-white text-center  position-fixed ">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <i class="fa-regular fa-grip-lines  open-close"></i>
+            <div class="icons">
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    <section class="container">
+        <div id="search" class="search my-5">
+            <div class="input-group mb-3 w-75 mx-auto  ">
+                <input type="search" class="form-control rounded-5 bg-transparent " placeholder="Search" id="Search"
+                    aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div id="moive" class="row">
+
+
+        </div>
+    </section>
+
+    <section id="Contact">
+        <div class="container">
+            <div class="header  text-white">
+                <h2>Contact Us</h2>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group mb-3 ">
+                            <input type="text" class="form-control bg-transparent yourName"
+                                placeholder="Enter your Name" aria-label="Enter your Name"
+                                aria-describedby="basic-addon2" required>
+
+                        </div>
+                        <p id="nameError" class="text-danger my-0 d-none ">Invalid Name</p>
+
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group mb-3 ">
+                            <input type="email" class=" yourEmail form-control bg-transparent "
+                                placeholder="Enter your Email" aria-label="Enter your Email"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <p id="emailError" class="text-danger my-0 d-none ">example@gmail.com</p>
+
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group mb-3 ">
+                            <input type="tel" class="form-control bg-transparent yourPhone"
+                                placeholder="Enter your Phone" aria-label="Enter your Phone"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <p id="phoneError" class="text-danger my-0 d-none ">Enter a valid Number</p>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group mb-3 ">
+                            <input type="number" class="form-control bg-transparent yourAge"
+                                placeholder="Enter your Age" aria-label="Enter your Age"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <p id="ageError" class="text-danger my-0 d-none ">Age Form 16 to 80</p>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group mb-3 ">
+                            <input type="password" class="form-control bg-transparent yourPassword"
+                                placeholder="Enter your Password" aria-label="Enter your Password"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <p id="passwordError" class="text-danger my-0 d-none ">password must contain numbers & letters
+                            at least 8 character</p>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group mb-3 ">
+                            <input type="password" class=" yourRePassword form-control bg-transparent "
+                                placeholder="ReEnter your Password" aria-label="ReEnter your Password"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <p id="rePasswordError" class="text-danger my-0 d-none  ">password dosn't match</p>
+
+                    </div>
+                    <div class="col-md-12  mt-4">
+                        <button type="submit" class="btn rounded-3 mb-3 px-3 py-2 mybtn text-white mybutton "
+                            disabled>Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!------------------ back TO TOP ----------------------->
+    <div id="backToTop" class="bg-black rounded-circle ">
+        <i class="fa-solid fa-arrow-up-long "></i>
+    </div>
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

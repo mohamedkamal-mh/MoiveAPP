@@ -1,0 +1,426 @@
+:root{
+    --main_font:'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #0D0D0D;
+    font-family: var(--main_font);
+}
+
+/**************************side navbar*******************************/
+.main-nav {
+    height: 100vh;
+    z-index: 999;
+}
+
+
+
+.list {
+    left: -300px;
+    transition: all;
+    transition-duration: 1s;
+    width: 300px;
+    padding-inline: 20px;
+
+
+}
+
+.taps {
+    height: 100vh;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.fa-solid {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+}
+
+.links {
+    height: 300px;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding-top: 250px;
+    opacity: 1;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+    transition: color;
+    transition-duration: 0.5s;
+
+
+}
+
+
+li:hover {
+    color: rgb(255, 101, 92);
+}
+
+
+.logo {
+    width: 30px;
+}
+
+.fa-grip-lines {
+    font-weight: bold;
+    font-size: 35px;
+    color: black;
+    cursor: pointer;
+}
+
+
+.fa-x {
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+}
+
+.footer {
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.footer .fa-brands,
+.footer .fa-solid {
+    color: white;
+    padding-inline: 10px;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+}
+
+/******************************side navbar**************************/
+
+/******************************container Serach*******************/
+
+.form-control {
+    color: white !important;
+    box-shadow: none;
+
+}
+
+
+#Search::placeholder {
+    color: white;
+}
+
+#backToTop {
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    font-size: 50px;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s;
+
+}
+
+#backToTop .fa-solid {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+
+}
+#backToTop.hide{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*******************Contact Us*********************************/
+
+.header {
+    h2 {
+        font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 31px;
+        font-weight: 500;
+        line-height: 38px;
+        margin-top: 100px;
+    }
+
+}
+#Contact .mybtn{
+    background-color: #424649;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    transition: all 1s;
+}
+#Contact .mybtn:hover{
+    background-color: white;
+    color:black !important;
+}
+
+#Contact .container .row .form-control {
+    border: none;
+    border-radius: 0%;
+    border-bottom: 1px solid #CED4DA;
+    box-shadow: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#Contact .container .row .form-control::placeholder {
+    color: #6C757D;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+
+
+
+.layer{
+    inset: 0;
+    background-color: rgba(0, 0, 0 , 0.7);
+    /* opacity: 0; */
+    transition:all  1s;
+}
+.my-card:hover img{
+    transform: scale(1.25) rotate(5deg);
+    filter: blur(3px);
+
+
+}
+img{
+    transition: all 0.5s;
+}
+/* .my-card:hover .layer { 
+    opacity: 1;
+}
+.my-card:hover h2 {
+    transform: translateY(0%);
+    opacity: 1;
+} */
+.layer h2{
+    font-family: var(--main_font);
+    font-size: 35px;
+    line-height: 42px;
+    font-weight:700;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: all 1s;
+    
+
+}
+.layer p{
+    font-family: var(--main_font);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(237, 237, 237);
+    margin-bottom: 16px;
+    transition: all 1s;
+}
+
+.rate{
+    width: 40px;
+    height: 40px;
+    border:2px solid green  ;
+    font-size: 20px;
+    padding: 10px;
+}
+.layer .date{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+/*********************Animation************************************/
+
+
+
+@keyframes paragraph_animation{
+    0%{
+        transform: perspective(400px) rotateX(20deg);
+    }
+
+    40%{
+        transform: perspective(400px) rotateX(-20deg);
+    }
+
+    60%{
+        transform: perspective(400px) rotateX(10deg);
+    }
+
+    80%{
+        transform: perspective(400px) rotateX(-10deg);
+    }
+
+    100%{
+        transform:perspective(400px) ;
+    }
+    
+}
+
+@keyframes title-animataion {
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    
+}
+@keyframes date-animataion {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    
+}
+@keyframes rate-animataion {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    
+}
+
+
+.paragraphShake{
+    animation-name: paragraph_animation;
+    animation-duration: 0.8s;
+
+
+}
+.paragraphleave{
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+
+.title-animation_in{
+    animation-name: title-animataion;
+    animation-duration: 1s;
+}
+.title-animation_out{
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.date-out{
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.date-in{
+    animation-name:date-animataion ;
+    animation-duration: 1s;
+}
+.rate-out{
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.rate-in{
+    animation-name:rate-animataion ;
+    animation-duration: 1s;
+}
+
+
+
+.leftMove{
+    opacity: 0;
+}
+ .rightMove{
+    opacity: 1;
+}
+
+
+
+
+/*********************************anaimation for validation**************************/
+
+
+.button_shake{
+    transform: translate(150px);
+
+}
+.button_start{
+    transform: translate(0px);
+
+}
+@keyframes shakebtn {
+    
+    0% {
+        transform: translateX(0)
+    }
+
+    10%,30%,50%,70%,90% {
+        
+        transform: translateX(-10px)
+        
+    }
+
+    20%,40%,60%,80% {
+        
+        transform: translateX(10px)
+    }
+
+    
+}
+
+.shakebtn{
+    animation-name:shakebtn ;
+    animation-duration: 1s;
+}
