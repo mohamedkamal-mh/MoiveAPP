@@ -1,0 +1,46 @@
+@media (max-width: 599px) {
+    .main-nav .taps {
+        background-color: transparent;
+    }
+
+    .taps .logo,
+    .taps .icons {
+
+        opacity: 0;
+    }
+
+    .taps .fa-regular {
+        color: white;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width:767px) {
+    .main-nav .taps {
+        background-color: transparent;
+    }
+
+    .taps .logo,
+    .taps .icons {
+        opacity: 0;
+    }
+
+    .taps .fa-regular {
+        color: white;
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    .main-nav .taps {
+        background-color: transparent;
+    }
+
+    .taps .logo,
+    .taps .icons {
+        opacity: 0;
+    }
+
+    .taps .fa-regular {
+        color: white;
+    }
+}
